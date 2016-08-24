@@ -10,9 +10,39 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *myLabel;
+
 @end
 
 @implementation ViewController
+
+- (IBAction)clear:(UIButton *)sender {
+    self.myLabel.text = @"0";
+}
+
+
+
+
+
+
+
+- (IBAction)buttonClicked:(UIButton *)sender {
+
+    
+    self.myLabel.text = @"TEST";
+
+
+
+}
+
+
+
+
+
+
+
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
