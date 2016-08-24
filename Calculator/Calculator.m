@@ -9,14 +9,25 @@
 #import "Calculator.h"
 
 @implementation Calculator
+//{
+//    double accumulator;
+//}
 
+//- (double) accmulator
+//{
+//    return accumulator;
+//}
 
-
+//- (void) setAccumulator:(double)value
+//{
+//    accumulator = value;
+//}
 
 - (void) clear
 {
     self.accumulator = 0;
 }
+
 
 - (void) add : (double) value
 {
