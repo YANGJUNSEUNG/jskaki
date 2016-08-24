@@ -73,6 +73,7 @@ typedef enum opr Operator;;
     }
     
     [calc setAccumulator:currentValue];
+    currentValue = 0;
     
 }
 
@@ -122,11 +123,13 @@ typedef enum opr Operator;;
 
     int value = (int)btn.tag;
     
-    if (currentOpr == none) {
-        currentValue = currentValue * 10 + value;
-    } else {
-        currentValue = value;
-    }
+    currentValue = currentValue * 10 + value;
+    
+//    if (currentOpr == none) {
+//        currentValue = currentValue * 10 + value;
+//    } else {
+//        currentValue = value;
+//    }
     
 
 
